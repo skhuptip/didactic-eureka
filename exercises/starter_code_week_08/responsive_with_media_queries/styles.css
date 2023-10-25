@@ -38,7 +38,26 @@ img {
     border-top-left-radius: 0.75em;
 }
 
-@media only screen and (min-width : 768px) {}
+/* tablet layout */
+@media only screen and (min-width : 768px) {
 
+    body {
+        
+    }
 
-@media only screen and (min-width : 1024px) {}
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* desktop layout */
+@media only screen and (min-width : 1024px) {
+
+    body {
+    
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

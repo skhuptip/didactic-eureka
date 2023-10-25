@@ -31,7 +31,12 @@ body {
 /* first section */
 
 .tint {
-    background: url("https://cdn.theasc.com/Rope-Cast-Set-Photo.jpg");
+    background: 
+    linear-gradient(
+        rgba(227, 184, 138, 0.2),
+        rgba(227, 184, 138, 0.2)      
+    ),
+    url("https://cdn.theasc.com/Rope-Cast-Set-Photo.jpg");
 }
 
 section.first {
@@ -48,6 +53,23 @@ section.second {
     color: #776045;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 2em;
+}
+
+.image-container {
+    grid-column: 3 / span 3;
+    grid-row: 3 / span 2;
+}
+
+.image-container img{
+    max-width: 100%;
+    height: auto;
+}
+
 /* third section */
 
 section.third {
@@ -58,6 +80,22 @@ section.third {
     align-items: center; /* horizontally center on the page */
 }
 
+.card-wrapper {
+    width: 400px;
+    height: 400px;
+}
+
+.card-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right top;
+    box-shadow: 5px 5px rgba(0, 0, 0, .2);
+}
+
+.content-container {
+    color: #141414;
+}
 
 /* typography */
 
