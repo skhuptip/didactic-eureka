@@ -1,16 +1,26 @@
+/* general settings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    text-align: center;
-    padding-top: 20px;
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: black;
+    color: white;
+    height: 100vh;
+    font-size: 16px;
 }
 
 h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+h2 {
     font-size: 50px;
+    text-align: center;
 }
 
 h3{
@@ -20,20 +30,58 @@ h3{
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
     padding-bottom: 10px;
 }
 
-body {
-    background: black;
-    color: white;
-    height: 100vh;
-    font-size: 18px;
+main {
+    flex: 1;
 }
 
 
-.flex-outer-container {
+
+/* header */ 
+header {
+    position: relative;
+    text-align: center;
+    height: 100px;
+}
+
+
+
+/* introduction */ 
+.introduction {
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.introduction h1 {
+    padding: 20px 0px 20px 0px;    
+}
+
+.introduction p {
+    padding: 0px 250px 0px 250px;
+}
+
+
+
+/* short-paragraph */ 
+.short-paragraph {
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.short-paragraph h2 {
+    padding: 20px 0px 20px 0px;
+}
+
+.short-paragraph p {
+    padding: 0px 250px 0px 250px;    
+}
+
+/* grid-part-of-the-web */ 
+.grid-part-of-the-web {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -41,16 +89,8 @@ body {
     padding-top: 20px;
 }
 
-header,
-footer {
-    height: 60px;
-}
-
-main {
-    flex: 1;
-}
-
 .grid-container {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
@@ -70,7 +110,7 @@ main {
 
 .content-container {
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     text-align: center;
 }
 
