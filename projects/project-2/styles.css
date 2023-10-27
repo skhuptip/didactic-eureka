@@ -41,12 +41,43 @@ main {
 
 
 
-/* header */ 
-header {
-    position: relative;
-    text-align: center;
-    height: 100px;
+/* navigation bar */ 
+
+nav {
+    /* Define the height of the navigation bar in pixels */
+    height: 60px;
 }
+
+ul.flex-container {
+    /* This is the parent element where you will set display:flex  */
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: rgb(35, 38, 39);
+    line-height: 60px; /*vertically centered text*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex-container li {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.flex-container a {
+    /* These are the children elements */
+    color:rgb(254, 248, 248);
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.flex-container a:hover {
+    background-color: rgba(0, 0, 0, 30%);
+}
+
 
 
 
@@ -70,6 +101,14 @@ header {
 .short-paragraph {
     text-align: center;
     padding: 100px 0px 100px 0px;
+    background:
+    linear-gradient(
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)      
+    ),
+    url("img/img4.png");
+    background-position: center;
+    color: black;
 }
 
 .short-paragraph h2 {
