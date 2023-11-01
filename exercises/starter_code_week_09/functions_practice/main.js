@@ -9,3 +9,17 @@
     [6] Take a number as a parameter and return itself squared
     [7] Have 3 optional parameters, all numbers. Add all the numbers together. If the function is called without passing any numbers in, simply return 10
 */
+
+function sayHello(){
+    console.log('Hello')
+}
+
+sayHello()
+
+function callName(name){
+    console.log("Hello, " + name)
+}
+
+callName("Kevin")
+callName("Chris")
+callName("Sarah")
