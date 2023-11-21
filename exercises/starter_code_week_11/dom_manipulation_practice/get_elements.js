@@ -16,5 +16,8 @@ console.log (second)
 /* Delete one of the elements with a class of 'second' and refresh the page. Do you get a similar result? */
 
 /* Get the span element using getElementsByTagname: */
+let span = document.getElementsByTagName('span')
+console.log (span)
+
 
 /* Add a span anywhere, and re-run the last piece of code. What's different? */
