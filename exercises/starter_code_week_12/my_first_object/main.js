@@ -18,3 +18,36 @@ console.log('this works');
     3. Print the release year
     4. Maybe your favorite movie came with an extended director's cut - write a statement that increases your movie object's duration by 25 minutes
 */
+
+const blade = {
+    title: 'Blade',
+    director: 'Stephen Norrington',
+    actors: ['Wesley Snipes', 'Stephen Dorff', 'Kris Kristofferson'],
+    releaseYear: 1998,
+    duration: 120,
+};
+
+let movie = blade.title;
+console.log(movie)
+
+let director = blade.director;
+console.log(director)
+
+let year = blade.releaseYear;
+console.log(year)
+
+let extended = blade.duration + 25;
+console.log(`The movie is ${extended} minutes`);
+
+let actors = blade.actors;
+console.log(actors)
+
+for(let i = 0; i < actors.length; i++){
+    console.log(actors[i])
+}
+
+
+// loop
+for(index in actors){
+    console.log(actors [index])
+}

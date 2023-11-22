@@ -28,3 +28,29 @@ const people = [
     { name: "yadri" },
     { name: "zack" }
 ];
+
+// specify the container / location
+const ul = document.querySelector('ul');
+
+// write a function
+const renderNamesToPage = (names) => {
+    for (let i = 0; i < names.length; i++){
+        console.log(names[i])
+
+        // create the list items
+        let list_item = document.createElement("li");
+
+        // add a class to the lis item result-item
+        list_item.classList.add("result-item");
+
+        // pass in the name
+        list_item.textContent = names[i].name;
+
+        // append to ul (container)
+        ul.appendChild(list_item)
+    }
+
+}
+
+// call the function
+renderNamesToPage(people)

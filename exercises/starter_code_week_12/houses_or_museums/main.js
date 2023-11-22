@@ -17,16 +17,18 @@ const translateToEnglish = () => {
     let h1 = document.querySelector("h1");
     h1.textContent = "houses or museums?"
 
-    english_text.style.display = "none"
-    portuguese_text.style.display = "flex"    
+    portuguese_text.style.display = "none"
+    english_text.style.display = "flex"   
 }
 
 const translateToPortuguese = () => {
+    //swapping the title
     let h1 = document.querySelector("h1");
     h1.textContent = "casas ou museus?"
 
-    portuguese_text.style.display = "none"
-    english_text.style.display = "flex"
+    // swapping the body
+    english_text.style.display = "none"
+    portuguese_text.style.display = "flex" 
 }
 
 
