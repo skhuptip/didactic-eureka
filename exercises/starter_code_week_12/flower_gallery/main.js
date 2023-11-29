@@ -32,24 +32,26 @@ const flowers = [
 ];
 
 
-// grab the ul
+// grab the ul (unordered list)
 const ul = document.querySelector('ul');
+const filterBtns = document.querySelector('.filters')
+const cards = document.getElementsByClassName('card');
 
 // write function
 const renderFlowersToThePage = (items) => {
     for(let i = 0; i < items.length; i++){
-        console.log(items[i]);
+        // console.log(items[i]);
 
-        //create a list item
+        // create a list item
         let list_item = document.createElement("li");
-        //?? list_item.classList.add(flowers[i].color `item--${i + 1}`)
+        list_item.classList.add("card", flowers[i].color, `item--${i + 1}`)
 
         // flower name
-        let title = document.createElement("h3")
+        let title = document.createElement("h3");
         title.textContent = flowers[i].name;
 
         // flower color
-        let color = document = document.createElement("p");
+        let color = document.createElement("p");
         color.textContent = flowers[i].color;
 
         // flower image
@@ -66,3 +68,34 @@ const renderFlowersToThePage = (items) => {
 
 // pass data into it
 renderFlowersToThePage(flowers)
+
+
+
+// filter flowers by color function
+const filterFn = (event) => {
+    // console.log(event)
+    console.log(event.target)
+    
+    if(event.target.classList.contains('filter-btn')){
+        // logic
+        let active = filterBtns.querySelector('.active');
+        active.classList.remove('active');
+        
+        event.target.classList.add('active');
+        
+        const filterValue = event.target.getAttribute("data-filter")
+        console.log(filterValue)
+   
+        for(let i = 0; i < cards.length; i++){
+            if(cards[i].classList.contains(filterValue) || filterValue === "all"){
+                cards[i].classList.remove('hide');
+                cards[i].classList.add('show');
+            } else {
+                cards[i].classList.remove('show');
+                cards[i].classList.add('hide');             
+            }
+        }
+    }
+}
+
+filterBtns.addEventListener('click', filterFn)
