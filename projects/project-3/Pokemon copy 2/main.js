@@ -3,19 +3,19 @@ console.log('this works');
 const pokemon = [
     {
         name: "Bulbasaur",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0001Bulbasaur.png"
     },
     {
         name: "Ivysaur",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0002Ivysaur.png"
     },
     {
         name: "Venusaur",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0003Venusaur.png"
     },
@@ -34,7 +34,7 @@ const pokemon = [
     },
     {
         name: "Charizard",
-        type: ["fire"],
+        type: ["fire", "flying"],
         image:
         "img/0006Charizard.png"
     },
@@ -72,45 +72,45 @@ const pokemon = [
     },
     {
         name: "Butterfree",
-        type: ["bug"],
+        type: ["bug", "flying"],
         image:
         "img/0012Butterfree.png"
     },
 
     {
         name: "Weedle",
-        type: ["bug"],
+        type: ["bug", "poison"],
         image:
         "img/0013Weedle.png"
     },
     {
         name: "Kakuna",
-        type: ["bug"],
+        type: ["bug", "poison"],
         image:
         "img/0014Kakuna.png"
     },
     {
         name: "Beedrill",
-        type: ["bug"],
+        type: ["bug", "poison"],
         image:
         "img/0015Beedrill.png"
     },
 
     {
         name: "Pidgey",
-        type: ["flying"],
+        type: ["normal","flying"],
         image:
         "img/0016Pidgey.png"
     },
     {
         name: "Pidgeotto",
-        type: ["flying"],
+        type: ["normal","flying"],
         image:
         "img/0017Pidgeotto.png"
     },
     {
         name: "Pidgeot",
-        type: ["flying"],
+        type: ["normal","flying"],
         image:
         "img/0018Pidgeot.png"
     },
@@ -130,13 +130,13 @@ const pokemon = [
 
     {
         name: "Spearow",
-        type: ["flying"],
+        type: ["normal", "flying"],
         image:
         "img/0021Spearow.png"
     },
     {
         name: "Fearow",
-        type: ["flying"],
+        type: ["normal", "flying"],
         image:
         "img/0022Fearow.png"
     },
@@ -194,7 +194,7 @@ const pokemon = [
     },
     {
         name: "Nidoqueen",
-        type: ["poison"],
+        type: ["poison", "ground"],
         image:
         "img/0031Nidoqueen.png"
     },
@@ -213,7 +213,7 @@ const pokemon = [
     },
     {
         name: "Nidoking",
-        type: ["poison"],
+        type: ["poison", "ground"],
         image:
         "img/0034Nidoking.png"
     },
@@ -259,58 +259,58 @@ const pokemon = [
 
     {
         name: "Zubat",
-        type: ["poison"],
+        type: ["poison", "flying"],
         image:
         "img/0041Zubat.png"
     },
     {
         name: "Golbat",
-        type: ["poison"],
+        type: ["poison", "flying"],
         image:
         "img/0042Golbat.png"
     },
 
     {
         name: "Oddish",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0043Oddish.png"
     },
     {
         name: "Gloom",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0044Gloom.png"
     },
     {
         name: "Vileplume",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0045Vileplume.png"
     },
 
     {
         name: "Paras",
-        type: ["bug"],
+        type: ["bug", "grass"],
         image:
         "img/0046Paras.png"
     },
     {
         name: "Parasect",
-        type: ["bug"],
+        type: ["bug", "grass"],
         image:
         "img/0047Parasect.png"
     },
 
     {
         name: "Venonat",
-        type: ["bug"],
+        type: ["bug", "poison"],
         image:
         "img/0048Venonat.png"
     },
     {
         name: "Venomoth",
-        type: ["bug"],
+        type: ["bug", "poison"],
         image:
         "img/0049Venomoth.png"
     },
@@ -394,7 +394,7 @@ const pokemon = [
     },
     {
         name: "Poliwrath",
-        type: ["water"],
+        type: ["water", "fighting"],
         image:
         "img/0062Poliwrath.png"
     },
@@ -439,51 +439,51 @@ const pokemon = [
 
     {
         name: "Bellsprout",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0069Bellsprout.png"
     },
     {
         name: "Weepinbell",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0070Weepinbell.png"
     },
     {
         name: "Victreebel",
-        type: ["grass"],
+        type: ["grass", "poison"],
         image:
         "img/0071Victreebel.png"
     },
 
     {
         name: "Tentacool",
-        type: ["water"],
+        type: ["water", "poison"],
         image:
         "img/0072Tentacool.png"
     },
     {
         name: "Tentacruel",
-        type: ["water"],
+        type: ["water", "poison"],
         image:
         "img/0073Tentacruel.png"
     },
 
     {
         name: "Geodude",
-        type: ["rock"],
+        type: ["rock", "ground"],
         image:
         "img/0074Geodude.png"
     },
     {
         name: "Graveler",
-        type: ["rock"],
+        type: ["rock", "ground"],
         image:
         "img/0075Graveler.png"
     },
     {
         name: "Golem",
-        type: ["rock"],
+        type: ["rock", "ground"],
         image:
         "img/0076Golem.png"
     },
@@ -503,13 +503,13 @@ const pokemon = [
 
     {
         name: "Slowpoke",
-        type: ["psychic"],
+        type: ["water", "psychic"],
         image:
         "img/0079Slowpoke.png"
     },
     {
         name: "Slowbro",
-        type: ["psychic"],
+        type: ["water", "psychic"],
         image:
         "img/0080Slowbro.png"
     },
@@ -529,20 +529,20 @@ const pokemon = [
 
     {
         name: "Farfetch'd",
-        type: ["flying"],
+        type: ["normal", "flying"],
         image:
         "img/0083Farfetch'd.png"
     },
 
     {
         name: "Doduo",
-        type: ["flying"],
+        type: ["normal", "flying"],
         image:
         "img/0084Doduo.png"
     },
     {
         name: "Dodrio",
-        type: ["flying"],
+        type: ["normal", "flying"],
         image:
         "img/0085Dodrio.png"
     },
@@ -555,7 +555,7 @@ const pokemon = [
     },
     {
         name: "Dewgong",
-        type: ["water"],
+        type: ["water", "ice"],
         image:
         "img/0087Dewgong.png"
     },
@@ -581,33 +581,33 @@ const pokemon = [
     },
     {
         name: "Cloyster",
-        type: ["water"],
+        type: ["water", "ice"],
         image:
         "img/0091Cloyster.png"
     },
 
     {
         name: "Gastly",
-        type: ["ghost"],
+        type: ["ghost", "poison"],
         image:
         "img/0092Gastly.png"
     },
     {
         name: "Haunter",
-        type: ["ghost"],
+        type: ["ghost", "poison"],
         image:
         "img/0093Haunter.png"
     },
     {
         name: "Gengar",
-        type: ["ghost"],
+        type: ["ghost", "poison"],
         image:
         "img/0094Gengar.png"
     },
 
     {
         name: "Onix",
-        type: ["rock"],
+        type: ["rock", "ground"],
         image:
         "img/0095Onix.png"
     },
@@ -653,13 +653,13 @@ const pokemon = [
 
     {
         name: "Exeggcute",
-        type: ["grass"],
+        type: ["grass", "psychic"],
         image:
         "img/0102Exeggcute.png"
     },
     {
         name: "Exeggutor",
-        type: ["grass"],
+        type: ["grass", "psychic"],
         image:
         "img/0103Exeggutor.png"
     },
@@ -712,13 +712,13 @@ const pokemon = [
 
     {
         name: "Rhyhorn",
-        type: ["ground"],
+        type: ["rock", "ground"],
         image:
         "img/0111Rhyhorn.png"
     },
     {
         name: "Rhydon",
-        type: ["ground"],
+        type: ["rock", "ground"],
         image:
         "img/0112Rhydon.png"
     },
@@ -778,7 +778,7 @@ const pokemon = [
     },
     {
         name: "Starmie",
-        type: ["water"],
+        type: ["water", "psychic"],
         image:
         "img/0121Starmie.png"
     },
@@ -792,14 +792,14 @@ const pokemon = [
 
     {
         name: "Scyther",
-        type: ["bug"],
+        type: ["bug", "flying"],
         image:
         "img/0123Scyther.png"
     },
 
     {
         name: "Jynx",
-        type: ["ice"],
+        type: ["ice", "psychic"],
         image:
         "img/0124Jynx.png"
     },
@@ -840,14 +840,14 @@ const pokemon = [
     },
     {
         name: "Gyarados",
-        type: ["water"],
+        type: ["water", "flying"],
         image:
         "img/0130Gyarados.png"
     },
 
     {
         name: "Lapras",
-        type: ["ice"],
+        type: ["water", "ice"],
         image:
         "img/0131Lapras.png"
     },
@@ -893,33 +893,33 @@ const pokemon = [
 
     {
         name: "Omanyte",
-        type: ["rock"],
+        type: ["rock", "water"],
         image:
         "img/0138Omanyte.png"
     },
     {
         name: "Omastar",
-        type: ["rock"],
+        type: ["rock", "water"],
         image:
         "img/0139Omastar.png"
     },
 
     {
         name: "Kabuto",
-        type: ["rock"],
+        type: ["rock", "water"],
         image:
         "img/0140Kabuto.png"
     },
     {
         name: "Kabutops",
-        type: ["rock"],
+        type: ["rock", "water"],
         image:
         "img/0141Kabutops.png"
     },
 
     {
         name: "Aerodactyl",
-        type: ["flying"],
+        type: ["rock", "flying"],
         image:
         "img/0142Aerodactyl.png"
     },
@@ -933,19 +933,19 @@ const pokemon = [
 
     {
         name: "Articuno",
-        type: ["ice"],
+        type: ["ice", "flying"],
         image:
         "img/0144Articuno.png"
     },
     {
         name: "Zapdos",
-        type: ["electric"],
+        type: ["electric", "flying"],
         image:
         "img/0145Zapdos.png"
     },
     {
         name: "Moltres",
-        type: ["fire"],
+        type: ["fire", "flying"],
         image:
         "img/0146Moltres.png"
     },
@@ -964,7 +964,7 @@ const pokemon = [
     },
     {
         name: "Dragonite",
-        type: ["dragon"],
+        type: ["dragon" /*, "flying"*/],
         image:
         "img/0149Dragonite.png"
     },
@@ -1062,3 +1062,7 @@ const filterFn = (event) => {
 }
 
 filterBtns.addEventListener('click', filterFn)
+
+console.table (
+pokemon.filter(p => p.type.includes("poison"))
+)
